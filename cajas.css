@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor{
+    background-color: sienna;
+    height: 500px;
+    display: flex;                      /*habilita propiedades*/
+    flex-direction: row;                /*dibuja el espacio X,Y*/
+    justify-content: flex-start;     /*tiene la distribucion del eje X*/ 
+    align-items: flex-start;
+    flex-wrap: wrap;                /*me dice que cuando haya muchos elemetos en la fila me haga salto de linea y el (no-wrap) lo contrario*/
+}
+.contenedor > div{
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: white;
+    font-size: 5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;                   /*esta propiedad ajusta los contenedores a las lineas*/
+}
